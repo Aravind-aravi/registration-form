@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+.text-invalid {
+  color: red !important;
+}
+.text-valid {
+  color: green !important;
+}
+.card-border {
+  border-radius: 25px;
+  /* border: 2px solid; */
+  /* padding: 20px; */
+  width: 50%;
+  /* height: 150px; */
+}
+
+.form-center {
+  justify-content: center;
+}
+.card {
+  margin: 30px auto 10px; /* Added */
+  float: none; /* Added */
+}
+.input {
+  margin-top: 10 !important;
+}
