@@ -13,7 +13,7 @@ function RegisterForm() {
       alert("Registered successfully");
       setUser(intialValue);
     }
-  }, [errors]);
+  }, [errors, isSubmit]);
 
   const onChangeHandler = (e) => {
     const { name, value } = e.target;
