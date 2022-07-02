@@ -38,6 +38,7 @@ function RegisterForm() {
                 return (
                   <div className={`${input.size}`} key={index}>
                     <label>{input.label}</label>
+
                     <InputForm
                       input={input}
                       onChangeHandler={onChangeHandler}

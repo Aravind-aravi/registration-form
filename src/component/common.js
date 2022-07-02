@@ -74,22 +74,11 @@ export const validate = (values) => {
   ) {
     errors.email = "This is not a valid email format";
   }
-  if (!values.mobileNum) {
-    errors.mobileNum = "Mobile number is required!";
-  } else if (!new RegExp(/^(\+\d{1,3}[- ]?)?\d{10}$/).test(values.mobileNum)) {
+  if (
+    values.mobileNum &&
+    !new RegExp(/^(\+\d{1,3}[- ]?)?\d{10}$/).test(values.mobileNum)
+  ) {
     errors.mobileNum = "This is not a valid mobile number";
-  }
-  if (!values.country) {
-    errors.country = "Country is required!";
-  }
-  if (!values.state) {
-    errors.state = "State is required!";
-  }
-  if (!values.city) {
-    errors.city = "City is required!";
-  }
-  if (!values.message) {
-    errors.message = "Message is required!";
   }
   return errors;
 };
